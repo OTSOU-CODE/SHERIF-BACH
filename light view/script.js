@@ -1,4 +1,4 @@
-// Sherif BACH - Professional Auto Upholstery Website JavaScript
+// SHERIF-SIEGE-AUTO - Professional Auto Upholstery Website JavaScript
 
 // Theme Switcher Functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -968,7 +968,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Console Welcome Message
-console.log('🚗 Sherif BACH Auto Upholstery Website');
+console.log('🚗 SHERIF-SIEGE-AUTO Auto Upholstery Website');
 console.log('✨ Professional experience loaded successfully');
 console.log('🎨 Interactive features initialized');
 console.log('💬 Live chat and FAQ features loaded');

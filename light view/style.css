@@ -513,6 +513,12 @@ input, textarea, [contenteditable] {
   animation: slideInLeft 0.8s ease-out both;
 }
 
+.title-line:first-child {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: var(--primary);
+}
+
 .title-line:nth-child(2) {
   animation-delay: 0.2s;
 }

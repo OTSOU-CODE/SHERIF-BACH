@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover, shrink-to-fit=no">
+  <title>Our Work Gallery - SHERIF-SIEGE-AUTO</title>
+  <meta name="description" content="View our portfolio of premium auto upholstery work. Custom car seats, leather restoration, and interior design projects.">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" as="style">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Gallery CSS -->
+  <style>
+    .gallery-page {
+      min-height: 100vh;
+      background: var(--background);
+      padding-top: 80px;
+    }
+    
+    .gallery-header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: var(--surface);
+    }
+    
+    .gallery-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+    
+    .gallery-header p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .gallery-item {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+      transition: all var(--transition-normal);
+      cursor: pointer;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-strong);
+    }
+    
+    .gallery-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    
+    .gallery-info {
+      padding: 1.5rem;
+    }
+    
+    .gallery-info h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery-info p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    
+    .back-to-home {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      transition: all var(--transition-normal);
+    }
+    
+    .btn-back:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .gallery-header h1 {
+        font-size: 2rem;
+      }
+      
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .gallery-container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="nav-logo">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Seat Base -->
+            <rect x="3" y="14" width="18" height="6" rx="2" fill="#2C2C2C" stroke="#D4AF37" stroke-width="0.8"/>
+            <!-- Seat Back -->
+            <rect x="4" y="6" width="16" height="10" rx="2" fill="#2C2C2C" stroke="#D4AF37" stroke-width="0.8"/>
+            <!-- Headrest -->
+            <rect x="7" y="2" width="10" height="6" rx="3" fill="#2C2C2C" stroke="#D4AF37" stroke-width="0.8"/>
+            <!-- Seat Cushion Detail -->
+            <rect x="5" y="15" width="14" height="2" rx="1" fill="#1A1A1A" opacity="0.6"/>
+            <!-- Back Support Lines -->
+            <line x1="6" y1="8" x2="6" y2="14" stroke="#8B6914" stroke-width="0.5" opacity="0.7"/>
+            <line x1="18" y1="8" x2="18" y2="14" stroke="#8B6914" stroke-width="0.5" opacity="0.7"/>
+            <line x1="12" y1="8" x2="12" y2="14" stroke="#8B6914" stroke-width="0.5" opacity="0.7"/>
+            <!-- Stitching Pattern -->
+            <path d="M8 4 Q12 2 16 4" stroke="#8B6914" stroke-width="0.3" fill="none" opacity="0.5"/>
+            <path d="M8 5 Q12 3 16 5" stroke="#8B6914" stroke-width="0.3" fill="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>SHERIF-SIEGE-AUTO</h1>
+          <span>Auto Upholstery</span>
+        </div>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#why-choose-us" class="nav-link">About</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link active">Our Work</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+      
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Page Content -->
+  <div class="gallery-page">
+    <div class="gallery-header">
+      <h1>Our Work Gallery</h1>
+      <p>Discover our portfolio of premium auto upholstery projects. Each piece showcases our commitment to quality, craftsmanship, and attention to detail.</p>
+    </div>
+    
+    <div class="gallery-container">
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Gallery items will be populated by JavaScript -->
+      </div>
+      
+      <div class="back-to-home">
+        <a href="index.html" class="btn-back">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+  
+  <!-- Gallery JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Gallery images data
+      const galleryData = [
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
+          title: 'Premium Black & Orange Design',
+          description: 'Sporty two-tone upholstery with vibrant orange accents on premium black leather. Features ergonomic side bolsters and precision stitching.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
+          title: 'Elegant Blue & Black Style',
+          description: 'Sophisticated blue and black leather combination with modern design elements. Perfect blend of comfort and style.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
+          title: 'Classic Red & Brown Finish',
+          description: 'Traditional red and brown leather with premium stitching and classic automotive styling. Timeless elegance meets modern comfort.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
+          title: 'Modern Yellow & Black Look',
+          description: 'Bold yellow accents on sleek black leather create a striking contrast. Contemporary design with exceptional craftsmanship.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png',
+          title: 'Luxury Green & Brown Design',
+          description: 'Rich forest green with warm brown leather inserts. Premium materials and expert craftsmanship for the ultimate in automotive luxury.'
+        }
+      ];
+      
+      // Populate gallery
+      const galleryGrid = document.getElementById('gallery-grid');
+      
+      galleryData.forEach((item, index) => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        galleryItem.innerHTML = `
+          <img src="${item.src}" alt="${item.title}" class="gallery-image" loading="lazy">
+          <div class="gallery-info">
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+          </div>
+        `;
+        
+        // Add click event for potential future modal functionality
+        galleryItem.addEventListener('click', function() {
+          // You can add modal functionality here if needed
+          console.log('Clicked on:', item.title);
+        });
+        
+        galleryGrid.appendChild(galleryItem);
+      });
+      
+      // Initialize navigation
+      setupNavigation();
+    });
+    
+    function setupNavigation() {
+      const navToggle = document.getElementById('nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+      
+      navToggle.addEventListener('click', function() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+      
+      // Close mobile menu when clicking on links
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
+</body>
+</html>

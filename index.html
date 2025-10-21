@@ -3,12 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go to Light View</title>
+    <title>SHERIF-SIEGE-AUTO - Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #D4AF37;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            color: #2C2C2C;
+            margin-bottom: 1.5rem;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #D4AF37;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .message {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .manual-choice {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e9ecef;
+        }
+        .manual-choice p {
+            color: #666;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+        .view-options {
+            display: flex;
+            gap: 1rem;
+        }
+        .view-btn {
+            flex: 1;
+            padding: 1rem;
+            background: #D4AF37;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .view-btn:hover {
+            background: #B8941F;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+        .view-btn.secondary {
+            background: #2C2C2C;
+        }
+        .view-btn.secondary:hover {
+            background: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="logo">SHERIF-SIEGE-AUTO</div>
+        <h1>Welcome!</h1>
+        <div class="spinner"></div>
+        <p class="message" id="message">Detecting your device...</p>
+        
+        <div class="manual-choice">
+            <p>Taking too long? Choose manually:</p>
+            <div class="view-options">
+                <a href="phone/index.html" class="view-btn">📱 Mobile</a>
+                <a href="light view/index.html" class="view-btn secondary">💻 Desktop</a>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Immediately redirect to light view page
-        window.location.href = 'light view/index.html';
+        // Device detection function
+        function isMobileDevice() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const mobileKeywords = ['android', 'webos', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone'];
+            
+            // Check user agent
+            const isMobileUA = mobileKeywords.some(keyword => userAgent.includes(keyword));
+            
+            // Check screen size (mobile devices typically have width < 768px)
+            const isMobileScreen = window.innerWidth < 768;
+            
+            // Check touch capability
+            const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            
+            return isMobileUA || (isMobileScreen && isTouchDevice);
+        }
+
+        // Auto-redirect based on device
+        window.addEventListener('load', function() {
+            const messageEl = document.getElementById('message');
+            const isMobile = isMobileDevice();
+            
+            if (isMobile) {
+                messageEl.textContent = 'Mobile device detected! Redirecting to mobile version...';
+                setTimeout(function() {
+                    window.location.href = 'phone/index.html';
+                }, 1500);
+            } else {
+                messageEl.textContent = 'Desktop device detected! Redirecting to desktop version...';
+                setTimeout(function() {
+                    window.location.href = 'light view/index.html';
+                }, 1500);
+            }
+        });
     </script>
 </body>
 </html>

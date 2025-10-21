@@ -200,10 +200,11 @@ function setupSeatInteractivity() {
     try {
       // List of known images (fallback)
       const knownImages = [
-        'component/ChatGPT Image Oct 2, 2025, 07_54_13 PM.png',
-        'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM.png',
-        'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM.png',
-        'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM.png'
+        'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png'
       ];
       
       // Try to detect additional images by testing common patterns
@@ -255,10 +256,11 @@ function setupSeatInteractivity() {
     } catch (error) {
       console.log('Using fallback images');
       return [
-        'component/ChatGPT Image Oct 2, 2025, 07_54_13 PM.png',
-        'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM.png',
-        'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM.png',
-        'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM.png'
+        'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
+        'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png'
       ];
     }
   }

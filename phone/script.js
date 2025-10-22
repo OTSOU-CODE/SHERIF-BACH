@@ -294,7 +294,7 @@ function setupContactForm() {
         submitButton.disabled = true;
 
         // Send to webhook
-        const webhookUrl = 'http://localhost:5678/webhook-test/f1a3160d-f1b7-46ae-bb3b-700ba002ea43';
+        const webhookUrl = 'http://localhost:5678/webhook/f1a3160d-f1b7-46ae-bb3b-700ba002ea43';
 
         fetch(webhookUrl, {
             method: 'POST',

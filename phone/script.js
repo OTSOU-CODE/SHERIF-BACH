@@ -294,7 +294,7 @@ function setupContactForm() {
         submitButton.disabled = true;
 
         // Send to webhook
-        const webhookUrl = 'http://localhost:5678/webhook-test/SHERIF-SIEGE-AUTO';
+        const webhookUrl = 'https://dr2mm.app.n8n.cloud/webhook-test/BACH';
 
         fetch(webhookUrl, {
             method: 'POST',
@@ -313,7 +313,7 @@ function setupContactForm() {
         })
         .then(response => {
             if (response.ok) {
-                showNotification('Thank you for your message! We will get back to you soon.', 'success');
+                showNotification('Thank you for your message. We will contact you very soon!', 'success');
                 contactForm.reset();
             } else {
                 throw new Error('Failed to send message');

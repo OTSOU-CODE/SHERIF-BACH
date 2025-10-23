@@ -2,31 +2,7 @@
 
 // Gallery data
 const galleryData = [
-  {
-    src: 'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
-    title: 'Premium Black & Orange Design',
-    description: 'Sporty two-tone upholstery with vibrant orange accents that perfectly complement the black leather base. Features premium stitching and ergonomic design for ultimate comfort.'
-  },
-  {
-    src: 'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
-    title: 'Elegant Blue & Black Style',
-    description: 'Sophisticated blue and black leather combination that exudes luxury and refinement. Perfect for executive vehicles seeking a professional yet stylish appearance.'
-  },
-  {
-    src: 'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
-    title: 'Classic Red & Brown Finish',
-    description: 'Traditional red and brown leather with premium stitching that brings warmth and character to any vehicle interior. A timeless design that never goes out of style.'
-  },
-  {
-    src: 'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
-    title: 'Modern Yellow & Black Look',
-    description: 'Bold yellow accents on sleek black leather create a modern, eye-catching design. Perfect for sports cars and performance vehicles that demand attention.'
-  },
-  {
-    src: 'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png',
-    title: 'Luxury Green & Brown Design',
-    description: 'Rich forest green with warm brown leather inserts create a sophisticated, nature-inspired design. Ideal for luxury vehicles seeking a unique and elegant appearance.'
-  }
+  
 ];
 
 // Global variables

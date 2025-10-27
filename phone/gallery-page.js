@@ -2,7 +2,31 @@
 
 // Gallery data
 const galleryData = [
-  
+  {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
+          title: 'Vibrant Blue Leather Upholstery',
+          description: 'Sporty style in deep blue leather. Featuring strong side supports and quality stitching.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
+          title: 'Vibrant Red Sport Upholstery',
+          description: 'Sporty Upholstery with Vibrant Red Leather. Features ergonomic side bolsters and precision stitching for ultimate comfort and style.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
+          title: 'Two-Tone Sport Upholstery (Black/Orange)',
+          description: 'Two-Tone Sport Upholstery in Black & Orange Leather. Features ergonomic side bolsters and precision stitching for a high-contrast, modern look.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
+          title: 'Two-Tone Modern Look (Dark Blue/White)',
+          description: 'Elegant Two-Tone Upholstery in Dark Blue & White Leather. Features ergonomic side bolsters and precision stitching for a classic, refined look.'
+        },
+        {
+          src: 'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png',
+          title: 'Premium Two-Tone (Black/Orange) Upholstery',
+          description: 'Premium Sport Upholstery with Dynamic Orange Inserts. Combines rich black leather with vibrant Orange, engineered with supportive bolsters for comfort.'
+        }
 ];
 
 // Global variables

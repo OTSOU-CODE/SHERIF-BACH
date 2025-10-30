@@ -48,16 +48,47 @@
         </div>
       </div>
       
-      <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle" title="Switch Theme">
-          <i class="fas fa-moon"></i>
-        </button>
-        <div class="nav-toggle" id="nav-toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
+    <!-- Replace the theme toggle button in all your HTML files -->
+<!-- Find this section in the navbar: -->
+
+<div class="nav-actions">
+  <button class="theme-toggle-btn" id="theme-toggle" title="Switch Theme" aria-label="Toggle theme" role="switch">
+    <!-- Icons container (background) -->
+    <div class="theme-toggle-icons">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Circular thumb (moves left/right) -->
+    <div class="theme-toggle-thumb">
+      <i class="fas fa-sun"></i>
+    </div>
+    
+    <!-- Particles container (for animation) -->
+    <div class="theme-toggle-particles"></div>
+  </button>
+  
+  <div class="nav-toggle" id="nav-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</div>
+
+<!-- Alternative: Let JavaScript build the structure (Recommended) -->
+<!-- If you prefer, you can use the simple version and let JavaScript add the internal structure: -->
+
+<div class="nav-actions">
+  <button class="theme-toggle-btn" id="theme-toggle" title="Switch Theme" aria-label="Toggle theme" role="switch">
+    <!-- JavaScript will populate this -->
+  </button>
+  
+  <div class="nav-toggle" id="nav-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</div>
     </div>
     
     <div class="nav-menu" id="nav-menu">

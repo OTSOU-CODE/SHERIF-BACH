@@ -422,9 +422,9 @@ async function detectComponentImages() {
         const knownImages = [
             'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
             'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
-            'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
-            'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
-            'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png'
+            'component/Black-&-Red.png',
+            'component/Dark-blue-&-white.png',
+            'component/Black-&-Orange.png'
         ];
 
         const allImages = [];
@@ -454,9 +454,9 @@ async function detectComponentImages() {
         return [
             'component/ChatGPT Image Oct 2, 2025, 08_56_02 PM-min.png',
             'component/ChatGPT Image Oct 2, 2025, 08_56_04 PM-min.png',
-            'component/ChatGPT Image Oct 2, 2025, 08_56_05 PM-min.png',
-            'component/ChatGPT Image Oct 2, 2025, 08_58_29 PM-min.png',
-            'component/ChatGPT Image Oct 2, 2025, 09_21_03 PM-min.png'
+            'component/Black-&-Red.png',
+            'component/Dark-blue-&-white.png',
+            'component/Black-&-Orange.png'
         ];
     }
 }
